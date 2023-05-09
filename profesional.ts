@@ -34,7 +34,54 @@ export class Professional{
 
 //metodos
 
-    printAll(){
+public getname(): String {
+    return this.name;
+}
+
+public getweight(): number {
+    return this.weight;
+}
+
+public getisRetired(): boolean{
+    return this.isRetired;
+}
+
+public getnationality(): String {
+    return this.nationality;
+}
+
+public getoscarsNumbers(): Number {
+    return this.oscarsNumber;
+}
+
+public getprofession(): string {
+    return this.profession;
+}
+
+public setname(name: string): void {
+    this.name = name;
+}
+
+public setweight(weight: number): void {
+    this.weight = weight;
+}
+
+public setisRetired(isRetired: boolean): void {
+    this.isRetired = isRetired;
+}
+
+public setnationality(nacionality: string): void {
+    this.nationality = nacionality;
+}
+
+public setoscarNumber(oscarsNumber: number): void {
+    this.oscarsNumber = oscarsNumber;
+}
+
+public setprofession(profession: string): void {
+    this.profession = profession;
+}
+printAll(){
         console.log(`name - ${this.name},${"\n"}weight - ${this.weight},${"\n"}isRetired - ${this.isRetired},${"\n"}nationality - ${this.nationality},${"\n"}oscarsNumber - ${this.oscarsNumber},${"\n"}profession - ${this.profession}${"\n"}${"\n"}`);
     }
     }
